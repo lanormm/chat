@@ -1,0 +1,21 @@
+﻿<Page x:Class="DeskChat.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DeskChat"
+      mc:Ignorable="d"
+      Title="Page1" Height="165.835" Width="234.383">
+    <StackPanel x:Name="stack1" HorizontalAlignment="Left" Height="166" Orientation="Horizontal" Width="234">
+        <Image Height="24"/>
+        <TextBlock TextWrapping="Wrap" Text="TextBlock" Margin="0,0,0,137" />
+    </StackPanel>
+
+    <!--<Grid x:Name="myGrid" Margin="0,0,-37,-24">
+        <ListView HorizontalAlignment="Left" Height="98" VerticalAlignment="Top" Width="128">
+            <StackPanel Height="100" Width="100"/>
+            <Image Height="100" Width="100"/>
+        </ListView>
+
+    </Grid>-->
+</Page>

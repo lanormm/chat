@@ -1,0 +1,7 @@
+C:\Users\Elano\Documents\source\repos\server\server\bin\Release\server.exe.config
+C:\Users\Elano\Documents\source\repos\server\server\bin\Release\server.exe
+C:\Users\Elano\Documents\source\repos\server\server\bin\Release\server.pdb
+C:\Users\Elano\Documents\source\repos\server\server\obj\Release\server.csprojResolveAssemblyReference.cache
+C:\Users\Elano\Documents\source\repos\server\server\obj\Release\server.csproj.CoreCompileInputs.cache
+C:\Users\Elano\Documents\source\repos\server\server\obj\Release\server.exe
+C:\Users\Elano\Documents\source\repos\server\server\obj\Release\server.pdb

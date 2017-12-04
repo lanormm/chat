@@ -1,0 +1,33 @@
+﻿<Page x:Class="DeskChat.user.UserChatWi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DeskChat.user"
+      mc:Ignorable="d" 
+      Height="263.045" Width="430.489"
+      Title="user_chat">
+
+    <Grid>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="430"/>
+        <Label x:Name="chatName" Content="{Binding Model.Alias}" HorizontalAlignment="Left" Margin="16,0,0,0" VerticalAlignment="Top" Width="386" Height="29" FontWeight="Bold"/>
+        <ListView ItemsSource="{Binding Model.Chat.col}" x:Name="chatMessagesList" HorizontalAlignment="Left" Height="198" Margin="0,28,0,0" VerticalAlignment="Top" Width="430">
+            <ListView.View>
+                <GridView ColumnHeaderContainerStyle="{StaticResource chatListStyle}">
+                    <GridViewColumn Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="chatMessageTextBox" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" HorizontalAlignment="Left" Height="37" Margin="0,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391"/>
+        <Button x:Name="btnSendUser" HorizontalAlignment="Left" Margin="391,226,0,0" VerticalAlignment="Top" Width="39" Height="37" Background="#FF102D57" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btnSendUser_Click">
+            <Path Data="{StaticResource send}" Stretch="Uniform" Fill="WhiteSmoke" Height="22.621" Width="20.558"></Path>
+        </Button>
+
+    </Grid>
+</Page>

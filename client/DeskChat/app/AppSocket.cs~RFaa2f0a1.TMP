@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
+
+namespace DeskChat.app
+{
+    public class AppSocket
+    {
+        private static AppSocket appSocket;
+        private AppSocket() { }
+
+        private Socket socket;
+
+        public static AppSocket init()
+        {
+            if(appSocket == null){
+                appSocket = new AppSocket() {
+                    socket = new Socket(AddressFamily.InterNetwork,
+                SocketType.Stream, ProtocolType.Tcp)
+            };
+            }            
+            return appSocket;
+        }        
+    }
+}

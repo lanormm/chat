@@ -19,8 +19,8 @@ Como Bytes: RSACryptoServiceProvider.ExportCspBlob()
 Como Objeto: RSACryptoServiceProvider.ExportRSAParameters() 
 
 ## Importando a chave pública e privada do RSA
-Como Bytes: RSACryptoServiceProvider.ImportCspBlob() 
-Como Objeto: RSACryptoServiceProvider.ImportRSAParameters() 
+ Como Bytes: RSACryptoServiceProvider.ImportCspBlob()  
+ Como Objeto: RSACryptoServiceProvider.ImportRSAParameters()  
 
 ## Criptrafar
 RSACryptoServiceProvider.Encrypt() 
